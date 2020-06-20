@@ -11,7 +11,7 @@ public interface StorageService {
 
     Optional<Link> load(String linkId) throws IOException;
 
-    List<Link> loadAll();
+    List<Link> loadAll() throws IOException;
 
     boolean delete(String linkId);
 }
